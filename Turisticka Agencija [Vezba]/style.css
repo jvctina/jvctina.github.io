@@ -1,0 +1,340 @@
+/* Page Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri, sans-serif; 
+}
+.header {
+    border-bottom: 2px solid #dc0101;
+    background-color: #fefefe;
+}
+.column {    
+   /* border: 1px solid black;*/
+    width: 1000px;
+    margin: 0px auto;
+}
+.page .column {
+    height: 100vh;
+}
+#logo-i-social {
+    display: flex;
+}
+#logo-holder {
+    flex-grow: 1;
+}
+#social-holder {
+    flex-grow: 1;
+    text-align: right;
+}
+#social-holder a {
+    text-decoration: none;
+}
+#social-holder a img {
+    margin: 5px;
+    height: 24px;
+    width: 24px;
+}
+#main-menu {
+    display: flex;
+}
+#main-menu a {
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #dc0101;
+    transition: 400ms;
+}
+#main-menu a:hover,
+#main-menu a.active {
+    background: #dc0101;
+    color: #ffffff;
+}
+#pocetna {
+    text-align: center;
+    color: #ffffff;
+    background: url(assets/img/nepal\ pocetna.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#pocetna h1{
+       font-size: 48pt;
+       margin-top: 0px;
+       padding-top: calc(30vh - 250px);
+}
+.dark-box {
+    background-color: #22222250;
+    border: 1px solid #ffffff;
+    font-size: 24pt;
+    padding: 40px;
+}
+#usluge {
+    text-align: center;
+    background: url(assets/img/lake\ .jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#karijera {
+    background: url(assets/img/bora-bora.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+.krugovi {
+    display: flex;
+    margin: 50px 0;
+}
+.krug-holder {
+    flex-grow: 1;
+    text-align: center;
+}
+.krug {
+    background: #dc0101;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 25%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.oznaka {
+
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.tehnologije {
+    margin: 50px 0px;
+    display: flex;
+}
+.tehnologija {
+    flex-grow: 1;
+    text-align: center;
+}
+.tehnologija img {
+    width: 48px;
+    height: 48px;
+}
+.tehnologija p {
+    font-weight: bold;
+}
+#usluge  {
+    color: #fff;
+    font-size: 30px;
+}
+#usluge h2{
+    padding-top: 20px;
+}
+.service-row {
+    display: flex;
+   margin-bottom: 40px;
+   justify-content: space-between;
+}
+.service-row > div {
+    text-align: center;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    border: 1px solid #fff;
+}
+.service-row > div > img {
+    width: 100%;
+    height: 100%;
+}
+.service-row > div > p {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    background-color: #ffffffA2;
+    margin-bottom: 0px;
+    color: #000;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+}
+.column-stretch {
+    display: flex;
+    flex-direction: column;
+}
+.column-stretch > * {
+    height: 100%;
+}
+#proizvodi h2{
+    padding-top: 50px;
+    text-align: center;
+}
+.matrica {
+    margin-top: 40px;
+    height: 500px;
+    display: grid;
+    grid-template: "a b c"
+                   "d b e"
+                   "f f g"; 
+    align-content: space-between;
+    justify-content: space-between;
+}
+#proizvod-a {
+    grid-area: a;
+}
+#proizvod-b {
+    grid-area: b;
+}
+#proizvod-c {
+    grid-area: c;
+}
+#proizvod-d {
+    grid-area: d;
+}
+#proizvod-e {
+    grid-area: e;
+}
+#proizvod-f {
+    grid-area: f;
+}
+#proizvod-g {
+    grid-area: g;
+}
+.proizvod {
+    display: grid;
+    grid-template: "region";
+    align-content: stretch;
+    justify-content: stretch;
+}
+.proizvod img {
+    grid-area: region;
+    justify-self: stretch;
+    align-self: stretch;
+    width: 100%;
+}
+.proizvod .text-holder {
+    grid-area: region;  
+    justify-self: stretch;
+    align-self: stretch;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #dc0101DD;
+    color: #fff;
+    opacity: 0.0;
+    transition: 500ms;
+}
+.proizvod:hover .text-holder {
+    opacity: 1.0;
+}
+#karijera h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.career-columns {
+    display: flex;
+}
+.job-list {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.job-descriptions {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+.job-list label {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffffC0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.job-descriptions input {
+    display: none;
+}
+.job-descriptions .job-description {
+    display: none;
+}
+.job-descriptions input:checked+.job-description {
+    display: block;
+}
+.job-description {
+    margin-left: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffffC0;
+    padding: 10px;
+    font-size: 20px;
+}
+#kontakt h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.kontakt-region {
+    display: grid;
+    grid-template: "adrese mapa"
+                  "mejlovi mapa";
+    grid-template-columns: 300px 1fr;              
+}
+.kontakt-adrese {
+    grid-area: adrese;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.kontakt-mejlovi {
+    grid-area: mejlovi;
+    font-size: 14px;
+}
+.kontakt-mejlovi a {
+    text-decoration: none;
+    color: #dc0101;
+}
+.kontakt-mejlovi a:hover {
+    text-decoration: underline;
+}
+.kontakt-mapa {
+    grid-area: mapa;
+}
+.footer {
+    border-top: 3px solid #dc0101;
+    background-color: #fefefe;
+    font-size: 13px;
+}
+.footer .footer-column {
+    display: flex;
+}
+.footer .footer-column {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+.red-link {
+    text-decoration: none;
+    color: #dc0101;
+}
+.red-link:hover {
+    text-decoration: underline;
+}
