@@ -3,37 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS 001</title>
+    <title>JavaScript</title>
 </head>
   <body>
-    <input type="number" id="input_a" value="0"><b>
-    <input type="number" id="input_b" value="0"><b>    
-     <p id="res">0</p>
-    <script>
-        function izracunaj()  {
-            let a = document.querySelector('#input_a');
-            let b = document.querySelector('#input_b');
+    Unesi ime:<input type="text" id="ime">
+    <button id="dodaj-ime-dugme">Dodaj</button>
 
-            let vrA = Number(a.value);
-            let vrB = Number(b.value);
+    <div id="imena">
+      
 
-            let r = vrA + vrB;
+    </div>
+     
 
-            let res = document.querySelector('#res');
-            res.innerHTML = 'Rezultat je<b>' + r + '</b>!';
-
-            res.innerHTML = `Rezultat je <b>${r}</b>!`;
-        }
-        
-        function init () {
-            let a = document.querySelector('#input_a');
-            let b = document.querySelector('#input_b');
-
-            a.addEventListener('change', izracunaj);
-            b.addEventListener('change', izracunaj);
-        }
-
-        window.addEventListener('load', init);
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
