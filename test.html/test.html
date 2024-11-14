@@ -1,0 +1,24 @@
+<script>
+    let ime = ' Univerzitet Singidunum    ';
+ 
+    ime = ime.toUpperCase()
+    ime = ime.replace('UNIVERZITET','UNIVERSITY');
+    ime = ime.substr(10);
+    ime = ime.trim();
+  
+ 
+ 
+    console.log(ime);
+    let duzinaTeksta = ime.length;
+
+    console.log(duzinaTeksta);
+    if (duzinaTeksta<6){
+        console.log('Lozinka nije moguca!');
+    }  else {
+        console.log('Lozinka je moguca!');
+    }
+
+   
+
+  
+ </script>
