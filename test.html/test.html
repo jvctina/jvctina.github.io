@@ -1,33 +1,32 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proba</title>
-  </head>
-  <body>
-    <div id="poruka"></div>
-    Ime: <input id="ime" type="text" /><br />
-    ???
-    <script>
-      window.addEventListener("load", init);
+<script>
+  let n = 4;
 
-      function init() {
-        let e = document.getElementById("ime");
-        e.addEventListener("keyup", proveriIme);
-      }
-      function proveriIme() {
-        // Nadji ime element
-        let e = document.getElementById("ime");
-        let ime = e.value;
-        // Ime mora biti izmedju 3 i 20 karaktera
-        let poruka = "";
-        if (ime.length < 3 || ime.length > 20) {
-          poruka = "Ime nije ispravno!";
-        }
-        // stavi tekst u poruku
-        let pe = document.getElementById("poruka");
-        pe.innerText = poruka;
-      }
-    </script>
-  </body>
-</html>
+  switch (n) {
+    case 1:
+      console.log("Upisujete OAS");
+      break;
+    case 2:
+      console.log("Upisujete MAS");
+      break;
+    case 3:
+      console.log("Upisujete DAS");
+      break;
+    case 4:
+      console.log("Upisujete PDS");
+      break;
+    default:
+      console.log("Nepoznat nivo");
+  }
+
+  /*if (n === 1) {
+    console.log("Upisujete OAS");
+  } else if (n === 2) {
+    console.log("Upisujete MAS");
+  } else if (n === 3) {
+    console.log("Upisujete DAS");
+  }  if else (n === 4){
+    console.log("Upisujete PDS");
+  } else {
+    console.log('Nepoznat nivo');
+  }*/
+</script>
