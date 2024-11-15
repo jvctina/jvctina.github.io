@@ -1,24 +1,33 @@
-<script>
-    let ime = ' Univerzitet Singidunum    ';
- 
-    ime = ime.toUpperCase()
-    ime = ime.replace('UNIVERZITET','UNIVERSITY');
-    ime = ime.substr(10);
-    ime = ime.trim();
-  
- 
- 
-    console.log(ime);
-    let duzinaTeksta = ime.length;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proba</title>
+  </head>
+  <body>
+    <div id="poruka"></div>
+    Ime: <input id="ime" type="text" /><br />
+    ???
+    <script>
+      window.addEventListener("load", init);
 
-    console.log(duzinaTeksta);
-    if (duzinaTeksta<6){
-        console.log('Lozinka nije moguca!');
-    }  else {
-        console.log('Lozinka je moguca!');
-    }
-
-   
-
-  
- </script>
+      function init() {
+        let e = document.getElementById("ime");
+        e.addEventListener("keyup", proveriIme);
+      }
+      function proveriIme() {
+        // Nadji ime element
+        let e = document.getElementById("ime");
+        let ime = e.value;
+        // Ime mora biti izmedju 3 i 20 karaktera
+        let poruka = "";
+        if (ime.length < 3 || ime.length > 20) {
+          poruka = "Ime nije ispravno!";
+        }
+        // stavi tekst u poruku
+        let pe = document.getElementById("poruka");
+        pe.innerText = poruka;
+      }
+    </script>
+  </body>
+</html>
