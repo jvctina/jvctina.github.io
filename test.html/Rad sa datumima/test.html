@@ -3,8 +3,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MilanTairSingidunum</title>
+    <style>
+      #zaposleni {
+        border: 3px solid black;
+        border-collapse: collapse;
+       
+      }
+      #zaposleni th {
+        border: 1px solid #999;
+        padding: 3px;
+        font-size: 10pt;
+        background-color: #dc0000;
+        color: #ffffff;
+      }
+      #zaposleni tbody tr td {
+        border-bottom: 1px dashedblack;
+      }
+      #zaposleni tfoot tr{
+        background-color: #eee;
+      }
+      #zaposleni tbody tr td:nth-child(1),
+      #zaposleni tbody tr td:nth-child(3) {
+        text-align: right;
+      }
+      .text-right {
+        text-align: right;
+      }
+      #plata-zaglavlje {
+        vertical-align: bottom;
+      }
+      #suma-labela {
+        vertical-align: top;
+      }
+    </style>
   </head>
   <body>
-    <script src="main.js"></script>
+   <table id="zaposleni">
+    <thead>
+      <tr>
+        <th colspan="2">maj 2019
+        <th rowspan="2" id="plata-zaglavlje">Iznos plate
+      <tr>
+        <th>R.br.
+        <th>Ime i prezime
+          <tbody>
+            <tr>
+              <td>1.
+              <td>Pera Peric
+              <td>700 EUR
+            <tr>
+              <td>2.
+              <td>Milica Milic
+              <td>800 EUR
+            <tr>
+              <td>3.
+              <td>Milan Milic
+              <td>600 EUR
+            <tr>
+              <td>4.
+              <td>Tijana Tijanic
+              <td>700 EUR
+       <tfoot>
+        <tr>
+          <td colspan="2" rowspan="2"
+           class="text-right" id="suma-labela">Suma:
+          <td class="text-right">2.800 EUR
+        <tr>
+          <td class="text-right">4 zaposlena  
+   </table>
   </body>
 </html>
