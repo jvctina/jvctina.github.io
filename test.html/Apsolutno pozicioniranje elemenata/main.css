@@ -1,35 +1,8 @@
-#app {
-  border: 1px solid #000000;
-  margin: 0px auto;
-  height: 200px;
-  width: 200px;
-  position: relative;
-}
-#element-1 {
-  border: 10px solid #c00;
-  margin: 5px;
-  height: 60px;
-  width: 130px;
-  background-color: #ee444470;
-  position: absolute;
+.obojeno {
+  width: 500px;
+  height: 280px;
+  border: 2px solid black;
 
-  right: 0px;
-  z-index: 10;
-}
-#element-2 {
-  border: 10px solid #00c;
-  margin: 5px;
-  height: 60px;
-  width: 130px;
-  background-color: #4444ee70;
-  position: absolute;
-  top: 40px;
-  z-index: 9;
-  
-}
-#element-1:hover {
-  border: 10px solid #000;
-}
-#element-2:hover {
-  border: 10px solid #fff;
+ background: repeating-linear-gradient(90deg,black,black 10px,transparent 10px,transparent 25px),
+             radial-gradient(circle at 50% 50%,red 100px,red 100px,transparent 100px);
 }
