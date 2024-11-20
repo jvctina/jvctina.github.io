@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dugme</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="grupa-inputa">
+      <label>Ime</label>
+      <input type="text" minlength="2" maxlength="50"/>
+    </div>
+    <div class="grupa-inputa">
+      <label>Godina</label>
+      <input type="number" min="1" max="4" step="1" />
+    </div>
+    <div class="grupa-inputa" >
+      <label>Adresa e-poste</label>
+      <input type="email" 
+              pattern="^[a-z]+\.[a-z]+\.[0-9](2,3)(\.dls)?@singimail\.rs$" />
+    </div>
+    <div class="grupa-inputa" >
+      <label>Broj telefona</label>
+      <input type="tel" pattern="^\+381[0-9](5,21)$" />
+    </div>
+    <div class="grupa-inputa">
+      <label>Poruka</label>
+      <textarea rows="6"  minlength="200" maxlength="5000"></textarea>
+    </div>
+    <div class="grupa-inputa">
+      <label>Fakultet</label>
+      <select>
+        <option value="fir">FIR</option>
+        <option value="tf">TF</option>
+        <option value="fthm">FTHM</option>
+        <option value="fir">FIR</option>
+      </select>
+      <div class="grupa-inputa" >
+        <label>Status zaposlenog</label>
+        <div class="checkbox-grupa">
+          <input type="checkbox" value="1"> Zaposlen
+        </div>
+          <div class="checkbox-grupa">
+            <input type="checkbox" value="2"> Nezaposlen  
+        </div>
+      </div>
+      <button type="button" class="dugme plavo">
+        Registruj se
+      </button>
+    </div>
+  </body>
+</html>
